@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+/* Paleta de colores personalizada */
+:root {
+    --cafe-primary: #5E3023;      /* Café oscuro */
+    --cafem-secondary: #895737;    /* Café medio */
+    --beige-light: #f3e9dc;        /* Beige claro */
+    --beigeo-accent: #DAB49D;       /* Beige oscuro */
+}
+
+
+/* Personalización del menú desplegable */
+#navbarHeader {
+    background-color: var(--beige-light) !important;
+    color: var(--cafe-primary) !important;
+}
+
+/* Personalización del menú desplegable */
+#navbarHeader {
+    background-color: var(--beige-light) !important;
+    color: var(--cafe-primary) !important;
+}
+
+#navbarHeader h4,
+#navbarHeader h5 {
+    color: var(--cafe-primary) !important;
+}
+
+#navbarHeader p {
+    color: var(--cafe-secondary) !important;
+}
+
+#navbarHeader a {
+    color: var(--cafe-secondary) !important;
+}
+
+#navbarHeader a:hover {
+    color: var(--cafe-primary) !important;
+    text-decoration: underline;
+}
+
+/* Barras de habilidades en color café */
+#navbarHeader svg rect {
+    fill: var(--cafe-primary) !important;
+}
+
+#navbarHeader .col-sm-6 h4 {
+    margin-left: 0 !important;
+}
+
+#navbarHeader .col-sm-4 h4 {
+    margin-left: 0 !important; /* Quita el margen izquierdo */
+}
+
+#aqui {
+    background-color: transparent !important;
+}
+
+#aqui tr {
+    background-color: transparent !important;
+}
+#aqui td {
+    background-color: transparent !important;
+    border-color: var(--cafe-primary);
+    padding: 0.5rem 0; /* Espacio vertical entre filas */
+    font-size: 1.1rem; /* Texto más grande */
+}
+
+body {
+    color: var(--color-primary);
+    font-family: 'Jost', sans-serif;
+}
+
+.bd-placeholder-img {
+                font-size: 1.125rem;
+                text-anchor: middle;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                user-select: none;
+            }
+            @media (min-width: 768px) {
+                .bd-placeholder-img-lg {
+                    font-size: 3.5rem;
+                }
+            }
+            .b-example-divider { /*para usar este divisor hay que agregarlo en el index*/
+                width: 100%;
+                height: 3rem;
+                background-color: #0000001a;
+                border: solid rgba(0, 0, 0, 0.15);
+                border-width: 1px 0;
+                box-shadow: inset 0 0.5em 1.5em #0000001a, inset 0 0.125em 0.5em #00000026;
+            }
+            .bi { /*Alinea los iconos de Bootstrap Icons correctamente con el texto*/
+                vertical-align: -0.125em;
+                fill: currentColor;
+            }
+            /*.btn-bd-primary { esto es la confi de los botones de arriba
+                --bd-violet-bg: var(--cafe-primary);
+                --bd-violet-rgb: 218, 180, 157;
+                --bs-btn-font-weight: 300;
+                --bs-btn-color: var(--beige-light);
+                --bs-btn-bg: var(--cafe-primary);
+                --bs-btn-border-color: var(--beige-light);
+                --bs-btn-hover-color: var(--cafe-primary);
+                --bs-btn-hover-bg: var(--beige-light);
+                --bs-btn-focus-shadow-rgb: var(--beige-light);
+                --bs-btn-active-color: var(--bs-btn-hover-color);
+                --bs-btn-active-bg: var(--cafem-secondary);
+                --bs-btn-active-border-color: var(--cafem-secondary);
+            }
+
+            .btn-bd-secondary { 
+                --bd-violet-bg: var(--cafem-secondary);
+                --bd-violet-rgb: 218, 180, 157;
+                --bs-btn-font-weight: 300;
+                --bs-btn-color: var(--beigeo-accent);
+                --bs-btn-bg: var(--cafem-secondary);
+                --bs-btn-hover-color: var(--cafem-secondary);
+                --bs-btn-hover-bg: var(--beigeo-accent);
+                --bs-btn-focus-shadow-rgb: var(--beigeo-accent);
+                --bs-btn-active-color: var(--bs-btn-hover-color);
+                --bs-btn-active-bg: var(--cafem-secondary);
+                --bs-btn-active-border-color: var(--cafem-secondary);
+            }*/
+
+            /* Efecto glassmorphism solo para los botones del banner */
+            .banner-hero .btn-bd-primary,
+            .banner-hero .btn-bd-secondary {
+              background: rgba(255, 255, 255, 0.15);   /* capa semitransparente */
+              color: #fff;
+              border: 1px solid rgba(255, 255, 255, 0.25);
+              backdrop-filter: blur(8px) saturate(180%);
+              -webkit-backdrop-filter: blur(8px) saturate(180%); /* para Safari */
+              box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+              transition: all 0.5s ease;
+            }
+
+            /* Efecto al pasar el mouse */
+            .banner-hero .btn-bd-primary:hover,
+            .banner-hero .btn-bd-secondary:hover {
+              background: rgba(255, 255, 255, 0.3);
+              transform: scale(1.05);
+              box-shadow: 0 6px 25px rgba(0, 0, 0, 0.3);
+            }
+
+            .btn-sm {
+              background: rgba(255, 255, 255, 0.1);   /* capa semitransparente */
+              color: #fff;
+              border: 1px solid rgba(255, 255, 255, 0.25);
+              box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+              transition: all 0.5s ease;
+            }
+
+            /* Efecto al pasar el mouse */
+            .btn-sm:hover {
+              background: rgba(255, 255, 255, 0.3);
+              border: 1px solid rgba(255, 255, 255, 0.25);
+              box-shadow: 0 6px 25px rgba(0, 0, 0, 0.3);
+            }
+
+            /* .bd-mode-toggle { este es el boton que hace que cambie el modo oscuro o claro
+                z-index: 1500;
+            }
+            .bd-mode-toggle .bi {
+                width: 1em;
+                height: 1em;
+            }
+            .bd-mode-toggle .dropdown-menu .active .bi {
+                display: block !important;
+
+            [data-bs-theme="dark"] {
+                --bs-body-bg: #1a1a1a;              
+                --bs-body-bg-rgb: 26, 26, 26;
+                --bs-body-color: #f0f0f0;           
+            }
+
+            [data-bs-theme="light"] {
+                --bs-body-bg: #F3E9DC; 
+                --bs-body-bg-rgb: 243, 233, 220;
+            }
+            */
+
+            .album {
+                background-color: var(--cafe-primary) !important;
+                padding: 3rem 0;
+            }
+
+            .card {
+                background-color: var(--cafem-secondary);
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+            }
+            .card:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15) !important;
+            }
+            .card-img-top {
+                height: auto;
+                width: 100%;
+                aspect-ratio: 1 / 1;
+                object-fit: cover;
+            }
+
+            .banner-hero {
+                background-image: url('banner.jpg'); /*tengo que acordarme de cambiarlo a un link*/
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                min-height: 200px; /* Ajusta según necesites */
+                width: 100%;
+                position: relative;
+            }
+
+            /* Capa oscura opcional para mejor legibilidad */
+            .banner-hero::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-color: rgba(0, 0, 0, 0.4);
+            }
+
+            .banner-hero .container {
+                position: relative;
+                z-index: 1;
+            }
+
+            header .navbar {
+              background: var(--cafe-primary); !important;
+            }
+
+            /* (Opcional) marca e ícono con estilo coherente */
+            
+            header .navbar .navbar-toggler {
+              background: rgba(243, 233, 220, 0.10);
+              border-color: var(--beige-light);
+          }
+
+          header .navbar .navbar-brand{
+            color: var(--beige-light);
+          }
+
+            footer {
+                background-color: var(--beige-light);
+                color: var(--cafe-primary);
+            }
+
+            footer a {
+                color: var(--cafe-primary);
+                text-decoration: underline;
+            }
+
+            footer a:hover {
+                color: var(--cafem-secondary);
+                transition: all 0.5s ease;
+                text-decoration: underline;
+            }
+
+            footer.text-body-secondary {
+                color: var(--cafe-primary) !important;
+            }
